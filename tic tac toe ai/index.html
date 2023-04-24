@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type = "text/css" href = "style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    </head>
+    <body class="noselect">
+        <div class="tictactoe-container">
+            <p data-record class="record ">X-0 0 0-O</p>
+            <div class="grid-container ">
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+            </div>
+            <select data-diff-select class="ai-select" onchange="updateDifficulty()">
+                <option data-translate value="easy"></option>
+                <option data-translate value="medium"></option>
+                <option data-translate value="hard"></option>
+                <option data-translate value="unbeatable"></option>
+                <option data-translate value="friend"></option>
+            </select>
+        </div>
+        <select data-lang-select class="language-select" onchange="updateLanguage()">
+            <option value="0">English</option>
+            <option value="1" selected>Русский</option>
+        </select>
+        <script src="script.js" defer></script>
+    </body>
+</html>
