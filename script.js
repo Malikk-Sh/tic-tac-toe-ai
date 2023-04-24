@@ -210,6 +210,7 @@ function scoreBoard(board, depth) {
 }
 
 function updateDifficulty() {
+    reset();
     if(difficultySelect.value != "friend") {
         switch(difficultySelect.value) {
             case "easy":
